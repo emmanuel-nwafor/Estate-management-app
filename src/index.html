@@ -16,9 +16,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   
 </head>
-<body class="bg-blue-50 pt-[90px]">
+<body class="bg-blue-50 max-md:bg-white pt-[90px]">
 
-  <nav class="bg-blue-50 fixed top-0 left-0 w-full z-50 p-3 items-center">
+  <nav class="bg-blue-50 max-md:bg-white fixed top-0 left-0 w-full z-50 p-3 items-center">
     <div class="flex items-center justify-evenly max-md:justify-between">
       <div class="flex items-center justify-center">
         <img src="Logo-1.png" class="h-11" alt="">
@@ -105,65 +105,130 @@
         </p>
     </div>
 
-    <div class="flex items-center justify-evenly">
-        <div class="">
-            <span class="">
-                <i class=""></i>
-
-                <div class="flex-col">
-                    <h1 class="text-lg">In-App Payments</h1>
-                    <p>Secure and instant payment via gateway</p>
-                </div>
-            </span>
-
-                        <span class="">
-                <i class=""></i>
-
-                <div class="flex-col">
-                    <h1 class="text-lg">In-App Payments</h1>
-                    <p>Secure and instant payment via gateway</p>
-                </div>
-            </span>
-
-                        <span class="">
-                <i class=""></i>
-
-                <div class="flex-col">
-                    <h1 class="text-lg">In-App Payments</h1>
-                    <p>Secure and instant payment via gateway</p>
-                </div>
-            </span>
+<div class="md:hidden relative bg-contain bg-center px-4 py-10 text-black" style="background-image: url('mockup-5.png');">
+    <div class="absolute inset-0 bg-white/90"></div>
+  
+    <!-- Foreground content -->
+    <div class="relative z-10 space-y-6">
+      <!-- Left Features -->
+      <div class="space-y-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wallet-alt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">In-App Payments</h1>
+            <p class="text-sm">Secure and instant payment via gateway</p>
+          </div>
         </div>
-        <div class=""></div>
-        <div class="">
-            <span class="">
-                <i class=""></i>
-
-                <div class="flex-col">
-                    <h1 class="text-lg">Issue Reporting</h1>
-                    <p>Tenants report, admins respond</p>
-                </div>
-            </span>
-
-                        <span class="">
-                <i class=""></i>
-
-                <div class="flex-col">
-                    <h1 class="text-lg">Issue Reporting</h1>
-                    <p>Tenants report, admins respond</p>
-                </div>
-            </span>
-
-                        <span class="">
-                <i class=""></i>
-
-                <div class="flex-col">
-                    <h1 class="text-lg">Issue Reporting</h1>
-                    <p>Tenants report, admins respond</p>
-                </div>
-            </span>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-receipt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Automatic Receipts & QR Verification</h1>
+            <p class="text-sm">For entrance and validation</p>
+          </div>
         </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-cog text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Issue Reporting, Maintenance & Payments</h1>
+            <p class="text-sm">Tenants report, admins respond</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Features -->
+      <div class="space-y-4 pt-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wrench text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Admin Dashboards</h1>
+            <p class="text-sm">Real-time monitoring for up to 500+ users</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-time text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Reminders & Notifications</h1>
+            <p class="text-sm">Never miss a due date again</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-support text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">CSV Export Reports</h1>
+            <p class="text-sm">Analyze financials with ease</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  
+  <!-- Desktop View -->
+  <div class="hidden md:flex flex-row items-center justify-evenly px-4 py-8 space-x-10">
+      <!-- Left Features -->
+      <div class="space-y-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wallet-alt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">In-App Payments</h1>
+            <p class="text-sm">Secure and instant payment via gateway</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-receipt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Automatic Receipts & QR Verification</h1>
+            <p class="text-sm">For entrance and validation</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-cog text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Issue Reporting, Maintenance & Payments</h1>
+            <p class="text-sm">Tenants report, admins respond</p>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Center Image -->
+    <div class="hidden md:block">
+      <img src="mockup-5.png" alt="App Mockup" class="h-[500px] object-cover" />
+    </div>
+  
+    <!-- Right Features -->
+    <div class="space-y-4 pt-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wrench text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Admin Dashboards</h1>
+            <p class="text-sm">Real-time monitoring for up to 500+ users</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-time text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Reminders & Notifications</h1>
+            <p class="text-sm">Never miss a due date again</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-support text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">CSV Export Reports</h1>
+            <p class="text-sm">Analyze financials with ease</p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
   </section>
   
   
