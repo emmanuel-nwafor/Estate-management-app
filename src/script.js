@@ -2,7 +2,6 @@ const toggleBtn = document.getElementById('menuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 
 let menuOpen = false;
-
 toggleBtn.addEventListener('click', () => {
   menuOpen = !menuOpen;
   if (menuOpen) {
