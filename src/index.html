@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RentAll</title>
 
+  <link rel="stylesheet" href="index.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-    }
-  </style>
+  
 </head>
-<body class="bg-blue-50">
+<body class="bg-blue-50 pt-[90px]">
 
-  <nav class="bg-blue-50 p-7">
+  <nav class="bg-blue-50 fixed top-0 left-0 w-full z-50">
     <div class="max-w-6xl mx-auto p-4 flex items-center justify-between">
-      <div class="text-2xl font-bold text-black">RentAll</div>
+      <div class="text-2xl font-bold text-black max-md:m-2">RentAll</div>
 
       <button id="menuToggle" class="md:hidden text-gray-700 focus:outline-none">
         <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,11 +29,11 @@
       </button>
 
       <div id="menu" class="hidden md:flex space-x-4 text-sm font-medium text-gray-700">
-        <a href="#" class="hover:text-blue-500 transition">Home</a>
-        <a href="#" class="hover:text-blue-500 transition">Features</a>
-        <a href="#" class="hover:text-blue-500 transition">How it works</a>
-        <a href="#" class="hover:text-blue-500 transition">FAQs</a>
-        <a href="#" class="hover:text-blue-500 transition">Contact Us</a>
+        <a href="#" class="hover:text-blue-500 m-4">Home</a>
+        <a href="#" class="hover:text-blue-500 m-4">Features</a>
+        <a href="#" class="hover:text-blue-500 m-4">How it works</a>
+        <a href="#" class="hover:text-blue-500 m-4">FAQs</a>
+        <a href="#" class="hover:text-blue-500 m-4">Contact Us</a>
       </div>
 
       <button class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
@@ -42,22 +41,48 @@
       </button>
     </div>
 
-    <div id="mobileMenu" class="md:hidden px-4 pb-4 transition-all hidden flex-col space-y-2 text-sm font-medium text-gray-700">
-      <a href="#" class="block hover:text-blue-500">Home</a>
-      <a href="#" class="block hover:text-blue-500">Features</a>
-      <a href="#" class="block hover:text-blue-500">How it works</a>
-      <a href="#" class="block hover:text-blue-500">FAQs</a>
-      <a href="#" class="block hover:text-blue-500">Contact Us</a>
+    <div id="mobileMenu" class="md:hidden px-4 p-4 transition-height menu-enter flex-col text-sm font-medium text-gray-700">
+      <a href="#" class="block hover:text-blue-500 mb-5">Home</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">Features</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">How it works</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">FAQs</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">Contact Us</a>
       <button class="w-full mt-2 bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
         Download App
       </button>
     </div>
   </nav>
 
-  <section class="flex items-center justify-center py-24 px-6 text-center">
-    <h1 class="text-3xl md:text-4xl font-semibold text-gray-800 max-w-3xl leading-relaxed">
-      Connecting Tenants, Landlords, and HOAs in One Powerful Platform
+  <!-- Hero Section -->
+  <section class="flex-col items-center justify-center py-24 px-6">
+    <h1 class="text-2xl md:text-4xl text-center font-semibold text-gray-800">
+      Connecting Tenants, Landlords, and HOAs <br class="max-md:hidden"> in One Powerful Platform
     </h1>
+    <p class="text-sm mt-3 text-center">
+        Simplify community living with seamless payments, issues reporting, 
+        and smart propertymanagement -- all in one place.
+    </p>
+    <div class="flex items-center m-6 justify-center">
+        <div class="bg-black rounded-lg p-2 m-2 flex items-center justify-center">
+            <i class='bx bxl-apple text-white text-4xl'></i>            
+            <p class="text-white text-[10px]">
+                Download on the <br class="">
+                <span class="text-lg">App Store</span>
+            </p>
+        </div>
+        <div class="bg-black rounded-lg p-2 m-2 flex items-center justify-center">
+            <i class='bx bxl-play-store text-yellow-500 text-4xl'></i>
+            <p class="text-white text-[10px]">
+                Download on the <br class="">
+                <span class="text-lg">App Store</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="">
+        <img src="/src/assets/mockup-1.png" alt="" class="">
+        <img src="/src/assets/mockup-2.png" alt="" class="">
+    </div>
   </section>
 
   <script src="script.js"></script>
