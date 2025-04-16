@@ -618,3 +618,7 @@ video {
 .underline {
   text-decoration-line: underline;
 }
+
+body{
+  font-family: "Poppins", sans-serif;
+}
